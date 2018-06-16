@@ -1,0 +1,59 @@
+.container {
+    &__nav {
+        border-top: 9px solid #222222;
+        text-align: center;
+        padding-top: 19px;
+        font-family: 'Lato', sans-serif;
+
+        &-menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+
+            li {
+                display: inline-block;
+                margin-left: 48px;
+                position: relative;
+
+                &:first-child {
+                    margin: 0;
+                }
+
+                a {
+                    color: #222222;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &.search {
+
+                    img {
+                        position: relative;
+                        left: -8.1px;
+                        top: 2px;
+                    }
+                }
+
+                &.cart {
+
+                    img {
+                        position: relative;
+                        right: 8.1px;
+                        top: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+        margin: 79px 0;
+        text-align: center;
+    }
+}
