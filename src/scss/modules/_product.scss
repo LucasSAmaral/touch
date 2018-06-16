@@ -12,6 +12,7 @@
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
 
             li {
                 display: inline-block;
@@ -34,7 +35,7 @@
                         left: -13px;
                     }
 
-                    &.active {
+                    &.current-product {
                         color: #9a9a9a;
                     }
 
@@ -55,5 +56,29 @@
                 }
             }
         }
+    }
+
+    &__pdp {
+        margin-top: 24px;
+    }
+
+    &__thumbnails {
+        margin-top: 8px;
+    }
+
+    &__thumb {
+        display: inline-block;
+        float: left;
+        margin-right: 16px;
+        padding-bottom: 4px;
+        cursor: pointer;
+
+        &.current-picture {
+            border-bottom: 2px solid #666666;
+        }
+    }
+
+    &__information {
+        background-color: red;
     }
 }

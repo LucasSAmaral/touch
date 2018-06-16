@@ -66,7 +66,8 @@ body {
   font-size: 11px; }
   .product__breadcrumb ul {
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .product__breadcrumb ul li {
       display: inline-block;
       margin-left: 20px;
@@ -84,7 +85,7 @@ body {
           position: absolute;
           top: 4px;
           left: -13px; }
-        .product__breadcrumb ul li a.active {
+        .product__breadcrumb ul li a.current-product {
           color: #9a9a9a; }
         .product__breadcrumb ul li a:hover {
           text-decoration: underline; }
@@ -93,5 +94,19 @@ body {
         .product__breadcrumb ul li:first-child a::before {
           content: " ";
           background-image: none; }
+.product__pdp {
+  margin-top: 24px; }
+.product__thumbnails {
+  margin-top: 8px; }
+.product__thumb {
+  display: inline-block;
+  float: left;
+  margin-right: 16px;
+  padding-bottom: 4px;
+  cursor: pointer; }
+  .product__thumb.current-picture {
+    border-bottom: 2px solid #666666; }
+.product__information {
+  background-color: red; }
 
 /*# sourceMappingURL=touch.css.map */
