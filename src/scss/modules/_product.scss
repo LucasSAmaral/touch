@@ -31,7 +31,7 @@
                         background-image: url(/src/assets/breadcrumbs-arrow.svg);
                         display: inline-block;
                         position: absolute;
-                        top: 4px;
+                        top: 5px;
                         left: -13px;
                     }
 
@@ -49,7 +49,7 @@
 
                     a {
                         &::before {
-                            content: " ";
+                            content: "";
                             background-image: none;
                         }
                     }
@@ -79,6 +79,30 @@
     }
 
     &__information {
-        background-color: red;
+        font-family: 'Lato', sans-serif;
+    }
+
+    &__ref {
+        font-size: 11px;
+        color: #9a9a9a;
+        letter-spacing: 0.4px;
+        margin: 0
+    }
+
+    &__social-media {
+
+        margin: 24px 0;
+
+        a {
+            margin-right: 32px;
+        }
+    }
+
+    &__title {
+        font-family: 'Playfair Display', sans-serif;
+        color: #222222;
+        font-size: 45px;
+        line-height: 1.07;
+        letter-spacing: -0.3px;
     }
 }

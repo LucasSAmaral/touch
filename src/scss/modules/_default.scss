@@ -13,3 +13,27 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
+// Firefox only
+@-moz-document url-prefix(){
+    .product__pictures, .product__information {
+        width: 50%;
+        float: left;
+    }
+
+    .product__information {
+        padding-left: 15px;
+    }
+}
+
+
+// Safari only
+@media only screen and (-webkit-min-device-pixel-ratio:1) {
+    
+    ::i-block-chrome, .product__pictures, .product__information { 
+         width: 50%; 
+         float: left;
+        
+    }
+
+}

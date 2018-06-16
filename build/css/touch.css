@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 body {
   margin: 0;
   padding: 0; }
@@ -12,6 +13,17 @@ body {
   margin: 0 auto;
   padding: 0; }
 
+@-moz-document url-prefix() {
+  .product__pictures, .product__information {
+    width: 50%;
+    float: left; }
+
+  .product__information {
+    padding-left: 15px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+  ::i-block-chrome, .product__pictures, .product__information {
+    width: 50%;
+    float: left; } }
 .container__nav {
   border-top: 9px solid #222222;
   text-align: center;
@@ -83,7 +95,7 @@ body {
           background-image: url(/src/assets/breadcrumbs-arrow.svg);
           display: inline-block;
           position: absolute;
-          top: 4px;
+          top: 5px;
           left: -13px; }
         .product__breadcrumb ul li a.current-product {
           color: #9a9a9a; }
@@ -92,7 +104,7 @@ body {
       .product__breadcrumb ul li:first-child {
         margin: 0; }
         .product__breadcrumb ul li:first-child a::before {
-          content: " ";
+          content: "";
           background-image: none; }
 .product__pdp {
   margin-top: 24px; }
@@ -107,6 +119,21 @@ body {
   .product__thumb.current-picture {
     border-bottom: 2px solid #666666; }
 .product__information {
-  background-color: red; }
+  font-family: 'Lato', sans-serif; }
+.product__ref {
+  font-size: 11px;
+  color: #9a9a9a;
+  letter-spacing: 0.4px;
+  margin: 0; }
+.product__social-media {
+  margin: 24px 0; }
+  .product__social-media a {
+    margin-right: 32px; }
+.product__title {
+  font-family: 'Playfair Display', sans-serif;
+  color: #222222;
+  font-size: 45px;
+  line-height: 1.07;
+  letter-spacing: -0.3px; }
 
 /*# sourceMappingURL=touch.css.map */
