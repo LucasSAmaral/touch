@@ -27,24 +27,31 @@ body {
 }
 
 
-// Safari only
+// Safari 5.1.7 for Windows only
 @media only screen and (-webkit-min-device-pixel-ratio:1) {
-    
-    ::i-block-chrome, .product__pictures, .product__information { 
-         width: 50%; 
-         float: left;
-        
+    ::i-block-chrome,
+    .product__pictures,
+    .product__information {
+        width: 50%;
+        float: left;
     }
-
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:1) {
-    
-    ::i-block-chrome, .other-products__container { 
-         width: 100%; 
-         float: left;
-         text-align: center;
-        
+    ::i-block-chrome,
+    .other-products__container {
+        width: 100%;
+        float: left;
+        max-width: 1440px !important;
     }
-
+    ::i-block-chrome,
+    .other-products__title::after {
+        left: 48.9%;
+    }
+    ::i-block-chrome,
+    .other-products__items {
+        display: inline-block;
+    }
+    ::i-block-chrome,
+    .other-products__items-image img {
+        width: 100%;
+        height: auto;
+    }
 }
