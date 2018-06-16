@@ -1,0 +1,98 @@
+.other-products {
+
+    &__container {
+
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 88px;
+    }
+
+    &__title {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+        color: #222222;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background-color: #d39850;
+            display: inline-block;
+            position: absolute;
+            left: calc(50% - 20px);
+            bottom: -16px;
+        }
+    }
+
+    &__item {
+        &-container {
+            margin-top: 64px;
+        }
+    }
+
+    &__items {
+
+        &-image {
+            position: relative;
+
+            &.discount {
+                &::before {
+                    content: "30% off";
+                    font-family: 'Lato', sans-serif;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    font-size: 11px;
+                    font-weight: bold;
+                    padding: 6px 8px;
+                    background-color: #000000;
+                    position: absolute;
+                    right: 0;
+                    top: 8px;
+                }
+            }
+        }
+
+        &-title {
+            height: 52px;
+            font-family: 'Playfair Display', sans-serif; 
+            font-size: 19px;
+            margin-bottom: 4px;
+            margin-top: 4px;
+            letter-spacing: 0.3px;
+        }
+
+        &-old-price {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            color: #9a9a9a;
+            text-decoration: line-through;
+            display: inline-block;
+            margin: 0;
+            margin-right: 10px;
+        }
+
+        &-price {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            color: #d39850;
+            display: inline-block;
+            margin: 0;
+        }
+
+        &-installment-payment {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+            color: #9a9a9a;
+            margin-top: 4px;
+            line-height: 1;
+        }
+    }
+}

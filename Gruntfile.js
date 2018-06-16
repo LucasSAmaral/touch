@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 separator: '\n\n',
             },
             dist: {
-                src: ['src/js/script.js'],
+                src: ['src/js/script.js', 'src/js/vue-script.js'],
                 dest: 'build/js/touch.js'
             }
         },

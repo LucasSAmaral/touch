@@ -119,9 +119,31 @@
             </div>
         </div>
 
+        <div class="other-products__container">
+            <p class="other-products__title">Aproveite Também</p>
+
+            <div class="other-products__item-container row" id="otherProducts">
+
+                <div class="other-products__items col-md-3" v-for="product in products">
+                    <div class="other-products__items-image" v-bind:class="{discount: product.discount}">
+                        <img v-bind:src="'src/assets/' + product.img" alt="">
+
+                        <p class="other-products__items-title">{{product.title}}</p>
+                        <div class="other-products__items-price-area">
+                                <p v-if="product.oldPrice != ''" class="other-products__items-old-price">{{product.oldPrice}}</p>
+                                <p class="other-products__items-price">{{product.price}}</p>
+                        </div>
+                        <p class="other-products__items-installment-payment">{{product.installmentPayment}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="build/js/min/touch.min.js"></script>
 </body>
 

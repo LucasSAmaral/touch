@@ -1,5 +1,3 @@
-// Ready to begin!
-
 var otherProducts = new Vue({
     el: "#otherProducts",
     data: {
