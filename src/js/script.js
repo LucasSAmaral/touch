@@ -12,4 +12,16 @@ $(document).ready(function(){
         });
     });
 
+    $('.product__thumb').click(function(){
+
+        var index = ($(this).index()) + 1;
+
+        $('.product__thumb').removeClass('current-picture');
+
+        $(this).addClass('current-picture');
+
+        $('.product__image img').attr('src','src/assets/image-pdp-desktop'+index+'.jpg');
+
+    });
+
 });
