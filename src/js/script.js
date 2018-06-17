@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    var whishlist = localStorage.getItem("whishlist");
+
+    if(whishlist == "true") {
+        $('.product__shopping-whishlist').addClass('on-whishlist');
+    }
+
     $.getJSON("src/js/products-sizes.json", function(data){
         $.each(data, function(key, value){
 
@@ -10,6 +16,19 @@ $(document).ready(function(){
             }
             
         });
+    });
+
+    $('.product__shopping-whishlist').click(function(){
+
+        var storage = window.localStorage.length;
+
+        if (storage > 0) {
+            localStorage.removeItem("whishlist");
+            $('.product__shopping-whishlist').removeClass('on-whishlist');
+        } else if (storage == 0){
+            localStorage.setItem("whishlist","true");
+            $('.product__shopping-whishlist').addClass('on-whishlist');
+        }
     });
 
     $('.product__thumb').click(function(){
