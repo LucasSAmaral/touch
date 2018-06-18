@@ -129,6 +129,8 @@ body {
           background-image: none; }
 .product__pdp {
   margin-top: 24px; }
+.product__image {
+  cursor: pointer; }
 .product__thumbnails {
   margin-top: 8px; }
 .product__thumb {
