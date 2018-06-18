@@ -64,17 +64,17 @@
             <div class="product__pdp row">
                 <div class="product__pictures col-md-6">
                     <div class="product__image">
-                        <img src="src/assets/image-pdp-desktop1.jpg" alt="">
+                        <img src="src/assets/image-pdp-desktop1.jpg" alt="Product image">
                     </div>
                     <div class="product__thumbnails">
                         <div class="product__thumb current-picture">
-                            <img src="src/assets/thumbs1.jpg" alt="">
+                            <img src="src/assets/thumbs1.jpg" alt="Thumbnail 1">
                         </div>
                         <div class="product__thumb">
-                            <img src="src/assets/thumbs2.jpg" alt="">
+                            <img src="src/assets/thumbs2.jpg" alt="Thumbnail 2">
                         </div>
                         <div class="product__thumb">
-                            <img src="src/assets/thumbs3.jpg" alt="">
+                            <img src="src/assets/thumbs3.jpg" alt="Thumbnail 3">
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
                 <div class="other-products__items col-md-3" v-for="product in products">
                     <div class="other-products__items-image" v-bind:class="{discount: product.discount}">
-                        <img v-bind:src="'src/assets/' + product.img" alt="">
+                        <img v-bind:src="'src/assets/' + product.img" alt="Other products image">
 
                         <p class="other-products__items-title">{{product.title}}</p>
                         <div class="other-products__items-price-area">
