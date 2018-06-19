@@ -53,8 +53,31 @@ $(document).ready(function () {
 
     });
 
-    $('.menu-mobile').click(function(){
+    $('.menu-mobile').click(function () {
         $('.container__nav-menu').slideToggle();
+    });
+
+    $('#postalCode').mask('99999-999');
+
+    $('.product__shipping-calculate').click(function () {
+        if ($('#postalCode').val() != "") {
+
+
+            $('.loading-area').fadeIn();
+
+            setTimeout(function () {
+                $('.loading-area').fadeOut();
+            }, 2000);
+
+            setTimeout(function () {
+                $('.loading-area').fadeOut();
+                $('.product__shipping-prices').fadeIn();
+            }, 3000);
+            $('#postalCode').css("border", "2px solid #dedede");
+        } else {
+            $('#postalCode').focus();
+            $('#postalCode').css("border", "2px solid red");
+        }
     });
 
 });

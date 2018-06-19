@@ -295,9 +295,18 @@ html, body {
   width: 172px;
   height: 40px;
   border: 2px solid #dedede; }
+.product__shipping-area .loading-area {
+  display: none;
+  width: 172px;
+  height: 49px;
+  text-align: center; }
+  .product__shipping-area .loading-area img {
+    width: auto;
+    height: 57px; }
 .product__shipping-calculate {
   margin-left: 16px; }
 .product__shipping-prices {
+  display: none;
   color: #222222;
   line-height: 1.69;
   letter-spacing: 0.6px;

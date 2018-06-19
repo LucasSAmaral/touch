@@ -316,6 +316,19 @@
                 height: 40px;
                 border: 2px solid #dedede;
             }
+
+            .loading-area {
+                display: none;
+                width: 172px;
+                height: 49px;
+                text-align: center;
+
+                img {
+                    width: auto;
+                    height: 57px;
+                }
+            }
+
         }
 
         &-calculate {
@@ -323,6 +336,7 @@
         }
 
         &-prices {
+            display: none;
             color: #222222;
             line-height: 1.69;
             letter-spacing: 0.6px;
