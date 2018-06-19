@@ -33,10 +33,18 @@
     &__item {
         &-container {
             margin-top: 64px;
+            @media screen and (max-width: 1024px){
+                display: block;
+            }
         }
     }
 
     &__items {
+
+        @media screen and (max-width: 1024px){
+            max-width: 262px;
+            margin: 0 auto;
+        }
 
         &-image {
             position: relative;
