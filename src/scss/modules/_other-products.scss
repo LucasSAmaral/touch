@@ -47,6 +47,16 @@
         }
 
         &-image {
+
+            img {
+
+                @media screen and (max-width: 1024px){
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+            
             position: relative;
 
             &.discount {

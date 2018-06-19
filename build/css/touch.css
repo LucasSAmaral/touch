@@ -340,6 +340,10 @@ html, body {
     margin: 0 auto; } }
 .other-products__items-image {
   position: relative; }
+  @media screen and (max-width: 1024px) {
+    .other-products__items-image img {
+      width: 100%;
+      height: auto; } }
   .other-products__items-image.discount::before {
     content: "30% off";
     font-family: 'Lato', sans-serif;
