@@ -53,4 +53,8 @@ $(document).ready(function () {
 
     });
 
+    $('.menu-mobile').click(function(){
+        $('.container__nav-menu').slideToggle();
+    });
+
 });

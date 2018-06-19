@@ -5,7 +5,25 @@
         padding-top: 19px;
         font-family: 'Lato', sans-serif;
 
+        .menu-mobile {
+
+            img {
+                width: 30px;
+                height: auto;
+            }
+
+            @media screen and (min-width: 768px){
+                display: none;
+            }
+        }
+
         &-menu {
+
+            @media screen and (max-width: 767px){
+                margin-top: 20px;
+                display: none;
+            }
+
             padding: 0;
             margin: 0;
             list-style: none;
@@ -14,12 +32,21 @@
             letter-spacing: 1px;
 
             li {
+
+                @media screen and (max-width: 767px){
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+
                 display: inline-block;
                 margin-left: 48px;
                 position: relative;
 
-                &:first-child {
-                    margin: 0;
+                @media screen and (min-width: 768px){
+                    &:first-child {
+                        margin: 0;
+                    }
                 }
 
                 a {
@@ -63,7 +90,22 @@
     }
 
     &__logo {
+
+        @media screen and (max-width: 767px){
+            margin: 50px 0;
+        }
+
         margin: 79px 0;
         text-align: center;
+
+        @media screen and (max-width: 511px){
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 432px;
+            width: 100%;
+            height: auto;
+        }
     }
 }

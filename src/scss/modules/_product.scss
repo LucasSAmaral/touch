@@ -3,11 +3,20 @@
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
+
+        @media screen and (max-width: 1024px){
+            padding: 0 15px;
+        }
     }
 
     &__breadcrumb {
         font-family: 'Lato', sans-serif;
         font-size: 11px;
+
+        @media screen and (max-width: 767px){
+            max-width: 520px;
+            margin: 0 auto;
+        }
 
         ul {
             list-style: none;
@@ -62,8 +71,21 @@
         margin-top: 24px;
     }
 
+    &__pictures {
+        @media screen and (max-width: 767px){
+            max-width: 554px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
     &__image {
         cursor: pointer;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__thumbnails {
@@ -77,6 +99,14 @@
         padding-bottom: 4px;
         cursor: pointer;
 
+        @media screen and (max-width: 349px){
+            margin-right: 7px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
         &.current-picture {
             border-bottom: 2px solid #666666;
         }
@@ -84,9 +114,20 @@
 
     &__information {
         font-family: 'Lato', sans-serif;
+
+        @media screen and (max-width: 767px){
+            max-width: 554px;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__ref {
+
+        @media screen and (max-width: 767px){
+            margin-top: 20px;
+        }
+
         font-size: 11px;
         color: #9a9a9a;
         letter-spacing: 0.4px;
